@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class SellerAuthComponent {
 
+
+
+  signup(signupdata:any)
+  {
+
+    return null;
+  }
+
+
 }

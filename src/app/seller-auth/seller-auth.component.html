@@ -1,10 +1,10 @@
 <div class="container">
     <div class="row">
-        <div class="col">
+        <div class="col-md-6 offset-md-3 text-center bg-warning">
             <form #signupid="ngForm" (ngSubmit)="signup(signupid.value)" >
-                <input type="text" placeholder="Enter Name"><br>
-                <input type="text" placeholder="Enter Email"><br>
-                <input type="password" placeholder="Enter Password"> <br>
+                <input type="text" placeholder="Enter Name" ngModel name="name"><br>
+                <input type="text" placeholder="Enter Email" ngModel name="email"><br>
+                <input type="password" placeholder="Enter Password" ngModel name="password"> <br>
                 <button>Sign Up</button>
             </form>
         </div>

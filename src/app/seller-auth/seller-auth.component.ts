@@ -12,7 +12,7 @@ export class SellerAuthComponent {
   signup(signupdata:any)
   {
 
-    return null;
+    console.log(signupdata);
   }
 
 

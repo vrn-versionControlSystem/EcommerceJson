@@ -4,14 +4,43 @@
       "id": 1,
       "name": "json-server",
       "email": "typi@code",
-      "password":"1234"
+      "password": "1234"
     },
     {
       "id": 2,
       "name": "json-server",
       "email": "typi@code",
-      "password":"1234"
+      "password": "1234"
+    },
+    {
+      "name": "Vasim",
+      "email": "vrnadaf@gmail.com",
+      "password": "1234",
+      "id": 3
+    },
+    {
+      "name": "q",
+      "email": "q",
+      "password": "q",
+      "id": 4
+    },
+    {
+      "name": "a",
+      "email": "a",
+      "password": "a",
+      "id": 5
+    },
+    {
+      "name": "a",
+      "email": "a",
+      "password": "a",
+      "id": 6
+    },
+    {
+      "name": "s",
+      "email": "s",
+      "password": "s",
+      "id": 7
     }
-
   ]
 }

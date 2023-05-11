@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { SellerService } from '../services/seller.service';
+import { Router } from '@angular/router';
+import { Signup } from '../DataType';
 
 @Component({
   selector: 'app-seller-auth',
@@ -7,12 +10,23 @@ import { Component } from '@angular/core';
 })
 export class SellerAuthComponent {
 
+  takedata:undefined| Signup;
 
+
+  constructor(private service:SellerService, private router:Router){}
 
   signup(signupdata:any)
   {
 
     console.log(signupdata);
+    this.service.userSignup(signupdata).subscribe((result)=>{
+      if(result)
+      { 
+        this.router.navigate(['/seller-home']);
+      }
+      
+    });
+
   }
 
 

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { SellerService } from '../services/seller.service';
 import { Router } from '@angular/router';
-import { Signup } from '../DataType';
+import { Signup, login } from '../DataType';
 
 @Component({
   selector: 'app-seller-auth',
@@ -34,6 +34,7 @@ export class SellerAuthComponent {
   {
     this.isOption=!this.isOption;
   }
+
 
 
 }

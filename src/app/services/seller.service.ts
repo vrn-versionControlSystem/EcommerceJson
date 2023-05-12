@@ -67,6 +67,11 @@ export class SellerService {
     return this.http.delete<Signup>("http://localhost:3000/seller"+data);
   }
 
-  
+  userloginData()
+  {
+    return this.http.get("http://localhost:3000/seller");
+  }  
+
+
 
 }

@@ -7,10 +7,10 @@
       "password": "1234"
     },
     {
-      "id": 2,
-      "name": "json-server",
-      "email": "typi@code",
-      "password": "1234"
+      "name": "q",
+      "email": "q",
+      "password": "q",
+      "id": 2
     },
     {
       "name": "Vasim",
@@ -19,46 +19,34 @@
       "id": 3
     },
     {
-      "name": "q",
-      "email": "q",
-      "password": "q",
+      "name": "Vasim",
+      "email": "vrnadaf@gmail.com",
+      "password": "1234",
       "id": 4
     },
     {
-      "name": "a",
-      "email": "a",
-      "password": "a",
+      "name": "Vasim",
+      "email": "vrnadaf@gmail.com",
+      "password": "1234",
       "id": 5
     },
     {
-      "name": "a",
-      "email": "a",
-      "password": "a",
+      "name": "q",
+      "email": "q",
+      "password": "q",
       "id": 6
     },
     {
-      "name": "s",
-      "email": "s",
-      "password": "s",
+      "name": "sas",
+      "email": "sasa",
+      "password": "sas",
       "id": 7
     },
     {
-      "name": "qw",
-      "email": "qw",
-      "password": "qw",
+      "name": "as",
+      "email": "as",
+      "password": "saas",
       "id": 8
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "id": 9
-    },
-    {
-      "name": "Kabir",
-      "email": "kabirmulla@gmail.com",
-      "password": "1234",
-      "id": 10
     }
   ]
 }

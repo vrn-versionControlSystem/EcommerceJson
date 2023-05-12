@@ -15,17 +15,17 @@ export class SellerAuthComponent {
 
   constructor(private service:SellerService, private router:Router){}
 
+  ngOnInit()
+  {
+    this.service.reloadSeller();
+  } 
+
+
   signup(signupdata:any)
   {
 
-    console.log(signupdata);
-    this.service.userSignup(signupdata).subscribe((result)=>{
-      if(result)
-      { 
-        this.router.navigate(['/seller-home']);
-      }
-      
-    });
+   
+    this.service.userSignup(signupdata);
 
   }
 

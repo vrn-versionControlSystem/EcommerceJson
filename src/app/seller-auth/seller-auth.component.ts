@@ -12,6 +12,7 @@ export class SellerAuthComponent {
 
   takedata:undefined| Signup;
 
+  isOption=false;
 
   constructor(private service:SellerService, private router:Router){}
 
@@ -27,6 +28,11 @@ export class SellerAuthComponent {
    
     this.service.userSignup(signupdata);
 
+  }
+
+  option()
+  {
+    this.isOption=!this.isOption;
   }
 
 

@@ -1,12 +1,27 @@
+
 <div class="container">
-    <div class="row">
+    <div *ngIf="!isOption" class="row">
         <div class="col-md-6 offset-md-3 text-center bg-warning">
+            <h1>Sing Up</h1>
             <form #signupid="ngForm" (ngSubmit)="signup(signupid.value)" >
                 <input type="text" placeholder="Enter Name" ngModel name="name"><br>
                 <input type="text" placeholder="Enter Email" ngModel name="email"><br>
                 <input type="password" placeholder="Enter Password" ngModel name="password"> <br>
                 <button>Sign Up</button>
             </form>
+            Do you have Already sing up? click here for<a routerLink="/seller-auth" (click)="option()"> Login</a>
+        </div>
+    </div>
+    <div *ngIf="isOption"  class="row">
+        <div class="col-md-6 offset-md-3 text-center bg-warning">
+            <h1>Login user</h1>
+            <form #signupid="ngForm" (ngSubmit)="signup(signupid.value)" >
+                
+                <input type="text" placeholder="Enter Email" ngModel name="email"><br>
+                <input type="password" placeholder="Enter Password" ngModel name="password"> <br>
+                <button>Login</button>
+            </form>
+            you Don't have Login account? click here for <a routerLink="/seller-auth" (click)="option()">Sign Up</a>
         </div>
     </div>
 </div>

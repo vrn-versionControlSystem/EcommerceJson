@@ -15,7 +15,8 @@
     <div *ngIf="isOption"  class="row">
         <div class="col-md-6 offset-md-3 text-center bg-warning">
             <h1>Login user</h1>
-            <form #signupid="ngForm" (ngSubmit)="signup(signupid.value)" >
+            <h3>{{authError}}</h3>
+            <form #loginid="ngForm" (ngSubmit)="login(loginid.value)" >
                 
                 <input type="text" placeholder="Enter Email" ngModel name="email"><br>
                 <input type="password" placeholder="Enter Password" ngModel name="password"> <br>

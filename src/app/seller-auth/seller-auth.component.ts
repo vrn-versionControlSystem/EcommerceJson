@@ -11,6 +11,7 @@ import { Signup, login } from '../DataType';
 export class SellerAuthComponent {
 
   takedata:undefined| Signup;
+  authError:String='';
 
   isOption=false;
 
@@ -32,9 +33,23 @@ export class SellerAuthComponent {
 
   option()
   {
+    this.authError="";
     this.isOption=!this.isOption;
   }
 
+  login(data:Signup)
+  {
+
+   
+    this.service.userloginData(data);
+    this.service.isLoginError.subscribe((isError)=>{
+      if(isError)
+      {
+        this.authError="Email or Password is not match";
+      }
+
+  });
+}
 
 
 }
